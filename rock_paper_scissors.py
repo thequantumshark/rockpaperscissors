@@ -18,7 +18,7 @@ if start_game.lower() == 'y':
 #Gameplay loop
 while game_on:
     try:
-        user_choice = int(input("\nEnter 1 for Rock, 2 for Paper, 3 for Scissors: "))
+        user_choice = int(input("\n1: for Rock \n2: for Paper \n3: for Scissors\nEnter your choice: "))
 
     except ValueError:
         print("Please enter a value of 1, 2, or 3!\n")
