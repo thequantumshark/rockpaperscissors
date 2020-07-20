@@ -18,10 +18,10 @@ if start_game.lower() == 'y':
 #Gameplay loop
 while game_on:
     try:
-        user_choice = int(input("\n1: for Rock \n2: for Paper \n3: for Scissors\nEnter your choice: "))
+        user_choice = int(input("\n1: for Rock \n2: for Paper \n3: for Scissors\n\nEnter your choice: "))
 
     except ValueError:
-        print("Please enter a value of 1, 2, or 3!\n")
+        print("\nPlease enter a value of 1, 2, or 3!")
 
     else:
         ai_choice = random.randint(1,3)
@@ -43,7 +43,7 @@ while game_on:
             total_games += 1
             ai_games += 1
             print(f"\nTough luck, {name.capitalize()}! Paper beats Rock! The AI won!")
-            print(f"Total games: {total_games}")
+            print(f"Total Games: {total_games}")
             print(f"Total Draws: {draws}")
             print(f"AI Wins: {ai_games}")
             print(f"{name.capitalize()} Wins: {user_games}")
@@ -99,7 +99,7 @@ while game_on:
             total_games += 1
             ai_games += 1
             print(f"\nTough luck, {name.capitalize()}, the AI won!")
-            print(f"Total games: {total_games}")
+            print(f"Total Games: {total_games}")
             print(f"Total Draws: {draws}")
             print(f"AI Wins: {ai_games}")
             print(f"{name.capitalize()} Wins: {user_games}")
@@ -125,7 +125,7 @@ while game_on:
 
 #post-game summary
 print(f"\nGoodbye, {name.capitalize()}!")
-print(f"\nFinal Score Count:")
+print(f"\nFinal Score Breakdown:")
 print(f"Total Games: {total_games}")
 print(f"Total Draws: {draws}")
 print(f"AI Wins: {ai_games}")
