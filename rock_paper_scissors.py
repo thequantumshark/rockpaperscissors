@@ -14,8 +14,6 @@ game_on = False
 #Initialize game
 if start_game.lower() == 'y':
     game_on = True
-else:
-    game_on = False
 
 #Gameplay loop
 while game_on:
